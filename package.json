@@ -4,8 +4,8 @@
   "description": "",
   "main": "build.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "build-css": "node-sass --include-path scss src/main.scss dist/styles.css",
+    "build": "npm run build-css && node build.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.7.6",
-    "marked": "^1.1.1"
+    "marked": "^1.1.1",
+    "node-sass": "^4.14.1"
   }
 }

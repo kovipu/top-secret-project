@@ -11,5 +11,8 @@
     "url": "github.com/kovipu/top-secret-project"
   },
   "author": "Konsta Purtsi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  }
 }

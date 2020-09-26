@@ -1,0 +1,30 @@
+.Content {
+  max-width: 490px;
+
+  > h1 {
+    color: $cyan; 
+  }
+
+  > p {
+    margin-bottom: 1.3rem;
+    line-height: 1.4;
+
+    > a {
+      color: $darkCyan;
+      transition: all ease .1s;
+
+      &:hover {
+        color: $background;
+        background-color: $darkCyan;
+      }
+    }
+
+    > em {
+      text-align: right;
+      margin-left: auto;
+      background-color: $red;
+      padding: 0.1rem 1rem;
+      border-radius: 100px;
+    }
+  }
+}

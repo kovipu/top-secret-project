@@ -4,7 +4,7 @@
   "description": "",
   "main": "build.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss src/main.scss dist/styles.css",
+    "build-css": "node-sass --include-path scss src/styles/main.scss dist/styles.css",
     "build": "npm run build-css && node build.js"
   },
   "repository": {

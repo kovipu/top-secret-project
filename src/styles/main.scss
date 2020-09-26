@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+$background: #011627;
+$foreground: #d6deeb;
+$black: #575656;
+$red: #da0f7a;
+$darkRed: #ff217c;
+$green: #22da6e;
+$cyan: #addb67;
+$darkCyan: #21c7a8;
+$blue: #82AAFF;
+$magenta: #C792EA;
+
+@import './reset.scss';
+@import './index.scss';
+
+:root {
+  font-family: 'Fira Code', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+body {
+  background-color: $background;
+  color: $foreground;
+  max-height: 100vh;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

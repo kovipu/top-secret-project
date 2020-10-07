@@ -24,10 +24,12 @@ $magenta: #C792EA;
 body {
   background-color: $background;
   color: $foreground;
-  max-height: 100vh;
-  height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+* {
+  box-sizing: border-box;
 }

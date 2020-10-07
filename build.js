@@ -1,8 +1,9 @@
 const generate = require('./lib/generator');
 
 const config = {
-  title: '~',
+  title: 'Konsta Purtsi',
   source: './src/pages',
+  partials: './src/partials',
   templates: './src/templates',
   destination: './dist'
 };

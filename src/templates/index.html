@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Konsta Purtsi's personal site.">
   <meta name="theme-color" content="#010f1b">
+  <script async type="text/javascript" src="bundle.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="bundle.css">
 </head>
 <body>
-  <header>
+  <header class="Header-fullheight">
     {{> asciiart }}
     {{> headercontent }}
   </header>
-  <div class="Content">
-    {{{ content }}}
+  <div class="ContentWrapper">
+    <div class="Content">
+      {{{ content }}}
+    </div>
   </div>
+  <div id="timeline"></div>
 </body>
 </html>

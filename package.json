@@ -5,7 +5,8 @@
   "main": "build.js",
   "scripts": {
     "build-css": "node-sass --include-path scss src/styles/main.scss dist/styles.css",
-    "build": "npm run build-css && node build.js"
+    "build-js": "rollup -c",
+    "build": "npm run build-css && npm run build-js && node build.js"
   },
   "repository": {
     "type": "git",
@@ -14,8 +15,14 @@
   "author": "Konsta Purtsi",
   "license": "ISC",
   "dependencies": {
+    "-": "0.0.1",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
     "handlebars": "^4.7.6",
     "marked": "^1.1.1",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "rollup": "^2.29.0",
+    "rollup-plugin-svelte": "^6.0.1",
+    "svelte": "^3.29.0"
   }
 }
